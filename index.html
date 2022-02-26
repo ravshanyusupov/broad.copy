@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="static/js/jquery.convform.js"></script>
+		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+	<link rel="stylesheet" href="static/css/style.css">
+<!--    chat bot css-->
+    <link rel="stylesheet" href="static/css/chat_bot_css/comment.css">
+    <link rel="stylesheet" href="static/css/chat_bot_css/jquery.convform.css">
+    <link rel="stylesheet" href="static/css/card.css">
+    <link rel="stylesheet" href="static/css/portfolio_card.css">
+<!--    end chat bot css-->
+</head>
+<body>
+<!--    chat bot-->
+
+    <div class="chat_icon">
+        <i class="fa-solid fa-comment"></i>
+    </div>
+    <div class="chat_box">
+        <div class="conv-form-wrapper">
+            <form action="" method="get" class="hidden">
+                <select name="category" data-conv-question="Hello! How can I help you">
+                    <option value="webDevelopment">Website Development</option>
+                    <option value="digitalMarketing">Digital Marketing</option>
+                </select>
+                <div data-conv-fork="category">
+                    <div data-conv-case="webDevelopment">
+                        <input type="text" name="domain_name" data-conv-question="Please, tell me your domain name">
+                    </div>
+                    <div data-conv-case="digitalMarketing">
+                        <input type="text" name="company_name" data-conv-question="Please, tell me your company name">
+                    </div>
+                    <input type="text" name="name" data-conv-question="Please, tell me your name">
+                    <input data-conv-question="Type in your e-mail"
+                        data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                        id="email" type="email" name="email" required placeholder="What's your e-mail?">
+
+                </div>
+                <select data-conv-question="Conform ?">
+                    <option value="conform">conform</option>
+
+                </select>
+            </form>
+        </div>
+    </div>
+
+<!--end chat bot-->
+    <nav class="navbar navbar-expand-custom navbar-mainbg" style="background-color: #0a58ca;">
+        <a class="navbar-brand navbar-logo" href="#"><img src="/static/images/logo_bg.png" id="nav-logo" alt=""></a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" >
+                <div class="hori-selector">
+					<div class="left">
+					</div><div class="right"></div></div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!--end navbar-->
+<!--video-->
+
+<!--end video-->
+
+<!--top card-->
+<div class="container-card">
+        <div class="card-card">
+            <img class="img-card"
+                src="https://images.unsplash.com/photo-1533658925625-2f94d23fc425?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=894c97adfd68510170db9ae89704c92e&auto=format&fit=crop&w=800&q=60" />
+            <h3 class="h3-card">Card title</h3>
+            <p class="p-card">Card description</p>
+        </div>
+        <div class="card-card">
+            <img class="img-card"
+                src="https://images.unsplash.com/photo-1533658925625-2f94d23fc425?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=894c97adfd68510170db9ae89704c92e&auto=format&fit=crop&w=800&q=60" />
+            <h3 class="h3-card">Card title</h3>
+            <p class="p-card">Card description</p>
+        </div>
+     <div class="card-card">
+            <img class="img-card"
+                src="https://images.unsplash.com/photo-1533658925625-2f94d23fc425?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=894c97adfd68510170db9ae89704c92e&auto=format&fit=crop&w=800&q=60" />
+            <h3 class="h3-card">Card title</h3>
+            <p class="p-card">Card description</p>
+        </div>
+        <div class="card-card">
+            <img class="img-card"
+                src="https://images.unsplash.com/photo-1533658925625-2f94d23fc425?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=894c97adfd68510170db9ae89704c92e&auto=format&fit=crop&w=800&q=60" />
+            <h3 class="h3-card">Card title</h3>
+            <p class="p-card">Card description</p>
+        </div>
+    </div>
+<!--end top card-->
+
+
+
+<!--bottom card-->
+<div class="abdullo">
+
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">FOREST</hi>
+    </div>
+    <div class="back">
+       <h2>Angular</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">TRACK</hi>
+    </div>
+    <div class="back">
+       <h2>Angular</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/34546/sunset-lake-landscape-summer.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">SWAMP</hi>
+    </div>
+    <div class="back">
+       <h2>Angular</h2>
+       <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+    </div>
+</div>
+</div>
+<!--end bottom card-->
+
+
+<!-- main -->
+
+
+    <div class="accordion-header"><h1>Ko'p beriladigan savollar</h1></div>
+<div class="accordions">
+  <div class="accordion">
+    <div class="accordion__slot">
+      <button class="accordion__button">ACIDIC GLAVENUS</button>
+    </div>
+    <div class="accordion__slot">
+      <div class="accordion__panel">
+        <p class="accordion-panel__content">A Glavenus subspecies that flings highly corrosive acid around with each swing of its tail.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion">
+    <div class="accordion__slot">
+      <button class="accordion__button">BANBARO</button>
+    </div>
+    <div class="accordion__slot">
+      <div class="accordion__panel">
+        <p class="accordion-panel__content">This monster gouges out the earth with its two massive horns as it charges at foes.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion">
+    <div class="accordion__slot">
+      <button class="accordion__button">AZURE RATHALOS</button>
+    </div>
+    <div class="accordion__slot">
+      <div class="accordion__panel">
+        <p class="accordion-panel__content">A Rathalos clad in azure-tinted scales. Favors aerial assaults on its prey.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion">
+    <div class="accordion__slot">
+      <button class="accordion__button">ANJANATH</button>
+    </div>
+    <div class="accordion__slot">
+      <div class="accordion__panel">
+        <p class="accordion-panel__content">A belligerent monster that will fight anything. Watch out for its dangerous kicks and bites.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion">
+    <div class="accordion__slot">
+      <button class="accordion__button">ANCIENT LESHEN</button>
+    </div>
+    <div class="accordion__slot">
+      <div class="accordion__panel">
+        <p class="accordion-panel__content">A creature so old and powerful that it is sometimes worshipped as a native deity in the world it hails from.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- endmain -->
+
+
+	<!-- footer -->
+
+	
+	<!--Some of this HTML is directly from Pavilion.  You can change it to whatever you want if you want to mimic this design.-->
+	<footer class="flex-rw">
+
+	  <ul class="footer-list-top">
+		<li>
+		  <h4 class="footer-list-header">About Pavilion</h4></li>
+		<li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">GET TO KNOW US</a></li>
+		<li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">PROMOS</a></li>
+		<li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">BECOME A RETAILER</a></li>
+
+		<li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">JOB OPENINGS</a></li>
+
+		<li><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor" itemprop="significantLink">EVENTS</a></li>
+	  </ul>
+	  <ul class="footer-list-top">
+		<li>
+		  <h4 class="footer-list-header">The Gift Selection</h4></li>
+
+
+		<li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">ANGEL FIGURINES</a></li>
+		<li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">HOME DECOR</a></li>
+		<li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">MUGS</a></li>
+		<li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">PET LOVER</a></li>
+		<li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor" target="_blank">HANDBAGS & JEWELRY</a></li>
+	  </ul>
+	  <ul class="footer-list-top">
+		<li id='help'>
+		  <h4 class="footer-list-header">Please Help Me</h4></li>
+		<li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
+		<li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+		<li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">STORE LOCATOR</a></li>
+		<li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor" itemprop="significantLink">NEW USERS</a></li>
+		<li id='order-tracking'><a href='/shop/order-status' itemprop="significantLink" class="generic-anchor footer-list-anchor">ORDER STATUS</a></li>
+	  </ul>
+	  <section class="footer-social-section flex-rw">
+		  <span class="footer-social-overlap footer-social-connect">
+		  CONNECT <span class="footer-social-small">with</span> US
+		  </span>
+		  <span class="footer-social-overlap footer-social-icons-wrapper">
+		  <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+		  <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+		  <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+		  <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+		  <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+		  <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+		  </span>
+	  </section>
+	  <section class="footer-bottom-section flex-rw">
+	<div class="footer-bottom-wrapper">
+	<i class="fa fa-copyright" role="copyright">
+
+	</i> 2019 Pavilion in <address class="footer-address" role="company address">Bergen, NY</address><span class="footer-bottom-rights"> - All Rights Reserved - </span>
+		</div>
+		<div class="footer-bottom-wrapper">
+		<a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
+		  </div>
+	  </section>
+	</footer>
+<!--statis js-->
+  <script src="static/js/script.js"></script>
+<!--end static js-->
+
+<!--accardion js-->
+    <script>
+    const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach((accordion) => {
+  const bttn = accordion.querySelector(".accordion__button");
+  const panel = accordion.querySelector(".accordion__panel");
+  const activeClassBtn = "accordion__button-active";
+  const activeClassPanel = "accordion__panel-active";
+
+  bttn.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const active__bttn = document.querySelectorAll(
+      ".accordion .accordion__button-active"
+    );
+    active__bttn.forEach((el) =>
+      el !== bttn ? el.classList.remove(activeClassBtn) : null
+    );
+    bttn.classList.toggle(activeClassBtn);
+
+    const active__panel = document.querySelectorAll(
+      ".accordion .accordion__panel-active"
+    );
+    active__panel.forEach((el) =>
+      el !== panel ? el.classList.remove(activeClassPanel) : null
+    );
+    panel.classList.toggle(activeClassPanel);
+
+    panel.style.setProperty("--height", `${panel.scrollHeight}px`);
+  });
+});
+
+</script>
+
+<!--end accardion js-->
+
+<!--chat bot js-->
+<script>
+        $(document).ready(function () {
+    $('.chat_icon').click(function (event) {
+        $('.chat_box').toggleClass('active');
+    });
+    $('.conv-form-wrapper').convform({ selectInputStyle: 'disable' })
+})
+    </script>
+<!--end chat bot js-->
+</body>
+</html>
